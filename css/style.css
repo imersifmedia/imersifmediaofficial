@@ -1,0 +1,246 @@
+* {
+    font-family: arial, calibri;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* navbar background */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to right, #00C0FA, #0169EC);
+    padding: 5px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+  }
+  /* akhir navbar background */
+  
+  /* navbar brand */
+  .logo img {
+    width: 120px;
+    height: 40px;
+}
+  /* akhir navbar brand */
+  
+  /* navbar garis tiga */
+  .navbar-toggler {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    border: none;
+    background: transparent;
+  }
+  .navbar-toggler-icon {
+    width: 25px;
+    height: 3px;
+    background-color: #ffffff;
+    margin: 4px 0;
+  }
+  /* navbar garis tiga */
+  
+  /* navbar background menu */
+  .navbar-menu {
+    display: flex;
+    opacity: 90%;
+  }
+  /* akhir navbar background menu */
+  
+  /* navbar text menu */
+  .navbar-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  .navbar-menu li {
+    margin-left: 50px;
+  }
+/* navbar text menu */
+.navbar-menu a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s; /* Menambahkan transisi perubahan warna */
+}
+.navbar-menu a:hover {
+    color: #f7b731; /* Warna yang diinginkan saat kursor mengarah pada teks */
+}
+  /* akhir navbar text menu */
+
+/* Home dan about */
+#home {
+    padding: 20px;
+    margin-top: 90px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    top: auto;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 100%;
+    transition: box-shadow 0.3s;
+}
+
+#about {
+    padding: 20px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    top: auto;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 100%;
+    transition: box-shadow 0.3s;
+}
+
+#home h2, #about h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+#home:hover, #about:hover {
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+#home p, #about p {
+    color: #666;
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: left;
+}
+
+/* Akhir Home dan about */
+
+  /* Kontak */
+  
+  .contact-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 100%;
+    transition: box-shadow 0.3s;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .contact-container:hover {
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+  }
+  
+  .contact-container img {
+    width: 150px; /* Sesuaikan ukuran gambar sesuai kebutuhan */
+    height: auto;
+    display: block;
+    margin: 0 auto; /* Untuk memastikan gambar berada di tengah */
+  }
+
+  /* Heading */
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #444;
+    font-size: 2rem;
+    transition: color 0.3s;
+  }
+  
+  h1:hover {
+    color: #2c3e50;
+  }
+  
+  img {
+    width: 120px;
+    height: 40px;
+    }
+
+  /* akhir contact */
+
+  /* hak cipta */
+  .footer {
+    background-color: #2c3e50;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s;
+  }
+  
+  .footer:hover {
+    background-color: #4d6c8b;
+  }
+  
+  .footer-content p {
+    margin: 10px 0;
+    font-size: 1rem;
+  }
+  
+  .footer-content a {
+    color: #ffdd00;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+  
+  .footer-content a:hover {
+    color: #f7b731;
+  }
+  /* akhir hak cipta */
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .navbar-toggler {
+      display: flex;
+    }
+  
+    .navbar-menu {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      position: absolute;
+      top: 54px;
+      left: 0;
+      background-color: #605f5f;
+      z-index: 10;
+    }
+  
+    .navbar-menu.open {
+      display: flex;
+    }
+  
+    .navbar-menu ul {
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+    }
+  
+    .navbar-menu li {
+      margin: 10px 0;
+    }
+  }
+  
+  .footer-content p {
+    font-size: 0.9rem;
+  }
+  
+  @media (max-width: 480px) {
+    .footer-content {
+      padding: 0 10px;
+    }
+  
+    .footer-content p {
+      font-size: 0.8rem;
+    }
+  }
+  
